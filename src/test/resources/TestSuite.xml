@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Test Regard" verbose="1">
+    <parameter name="USER" value="anton.tatur@tut.by"/>
+    <parameter name="PASSWORD" value="1234567u"/>
+    <test name="LoginTest" preserve-order="true">
+        <classes>
+            <class name="regard.tests.RegardLoginTest" />
+        </classes>
+    </test>
+   <test name ="EditPersonalInformation" >
+        <classes>
+            <class name="regard.tests.RegardEditInformationTest"/>
+        </classes>
+    </test>
+    <test name ="Search Test" >
+        <classes>
+            <class name="regard.tests.RegardSearchTest"/>
+        </classes>
+        <parameter name="QUERY" value="UPS"/>
+    </test>
+    <test name ="Catalog Test" >
+        <classes>
+            <class name="regard.tests.RegardCatalogTest"/>
+        </classes>
+    </test>
+    <test name ="ConfigPC Test" >
+        <classes>
+            <class name="regard.tests.RegardConfigPCTest"/>
+        </classes>
+        <parameter name="CPU" value="AMD A10-6800K"/>
+        <parameter name="Case" value="Corsair Carbide Series Air 240 Black (CC-9011070-WW)"/>
+        <parameter name="Monitor" value="Acer K222HQLbd"/>
+    </test>
+    <test name ="Basket Test" >
+        <classes>
+            <class name="regard.tests.RegardBasketTest"/>
+        </classes>
+    </test>
+    <test name ="Compare Test" >
+        <parameter name="LowerPrice" value="10000"/>
+        <parameter name="TopPrice" value="30000"/>
+        <parameter name="ToCompare" value="5"/>
+        <classes>
+            <class name="regard.tests.RegardCompareTest"/>
+        </classes>
+    </test>
+</suite>
